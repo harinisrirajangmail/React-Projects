@@ -9,19 +9,21 @@ function App() {
   const [estimation,setEstimation]=useState('');
   const [description,setDescription]=useState('')
 
-  const [todos,setTodos]=useState([])
+  const [todos,setTodos]=useState([]) //todos=[]
   const [editIndex,setEditIndex]=useState(null);
 
 
   //localstorage
   useEffect(()=>{
     const storeData=JSON.parse(localStorage.getItem('todos'));
+    console.log(storeData);
     setTodos(storeData);
   },[]);
 
   //save todo to localstorage
   useEffect(()=>{
-    localStorage.setItem('todos',JSON.stringify(todos));
+    localStorage.setItem('todos',JSON.stringify(todos));  
+    console.log('Todos',todos);
   },[todos])
 
   const newTodo={title,estimation,description,}
@@ -100,7 +102,7 @@ function App() {
 
       {todos.map((todo, index) => (
       <div className='font-container'>
-        <input type="text" placeholder='' key={index}  value={`${todo.title} - ${todo.estimation} hrs - ${todo.description}`} />
+        <input type="text" placeholder='' key={index}  value={`${todo.title}-${todo.description}-${todo.estimation} hrs`} />
         <div className='edit'>
       <FontAwesomeIcon icon={faPenToSquare} onClick={() => editTodo(index)} />
     </div>
