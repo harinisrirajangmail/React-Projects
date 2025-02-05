@@ -1,0 +1,123 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.containerOne{
+  box-shadow: 20px 15px 2px rgba(0, 0, 0, 0.3);;
+  background: linear-gradient(to bottom, #7ac8ff, #011f81);
+  /* background: linear-gradient(to bottom, #54cbe5 0%, #feb47b 50%, #86a8e7 100%); */
+  border: 7px solid black;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 600px;
+  text-align: center;
+  height: 500px;
+  margin: auto;
+
+}
+input{
+  padding: 20px;
+}
+.sub-container h1, .containerTwo h1{
+  display: flex;
+  margin-bottom: 0px;
+  
+}
+.containerTwo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/* .sub-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: -98%;
+  margin-left: -11rem;
+} */
+
+.sub-container input, .containerTwo input{
+  width: 94%;
+  padding: 7px;
+  margin: 5px;
+}
+input{
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.edit{
+  margin-left: -76px;
+  background-color: rgb(22, 184, 184);
+  color: white;
+  width: 1.3rem;
+  padding: 2px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.trash{
+  background-color: red;
+  color: white;
+  width: 1.3rem;
+  padding: 2px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.font-container{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.bttnAdd{
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #7ac8ff;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.line{
+  border: 1px solid black;
+  width: 97%;
+  margin: 10px auto;
+}
